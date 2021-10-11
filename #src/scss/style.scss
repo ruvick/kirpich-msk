@@ -7,7 +7,23 @@
 
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
-@import "fonts";
+// @import "fonts";
+
+@font-face {
+	font-family: 'Europe Ext';
+	src: url('../fonts/europeextbold.eot');
+	src: local('☺'), url('../fonts/europeextbold.woff') format('woff'), url('../fonts/europeextbold.ttf') format('truetype'), url('../fonts/europeextbold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/circe.eot');
+	src: local('☺'), url('../fonts/circe.woff') format('woff'), url('../fonts/circe.ttf') format('truetype'), url('../fonts/circe.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
@@ -15,7 +31,7 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "";
+$fontFamily: "Circe";
 $fontSize: 16;
 //</Шрифт по умолчанию>==========================================================================================
 
@@ -30,7 +46,7 @@ $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-$mainColor: #000;
+$mainColor: #a59d8a;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
@@ -38,11 +54,12 @@ $mainColor: #000;
 @import "null";
 body {
 	font-weight: 400;
+	line-height: 1.2;
 	color: $mainColor;
 	background: #333;
 	a {
-		font-family: "Lato";
-		color: #1a1818;
+		font-family: "Circe";
+		color: #fff;
 	}
 	&._lock {
 		overflow: hidden;
