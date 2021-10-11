@@ -1,0 +1,417 @@
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+
+//<ГОТОВЫЕ КЛАССЫ>====================================================================================================
+.d-flex {
+	display: flex;
+	// align-items: center; 
+}
+//====================================================================================================
+// Стили фоновой картинки
+._bgi {
+	background-position: 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+//====================================================================================================
+// Затемняет остальные пункты меню при наведении на основной
+.menu__link {
+  // padding: 0 16px;
+  transition: opacity 0.3s;
+}
+.sibling-fade:hover .menu__link:not(:hover) {
+  opacity: 0.5;
+}
+//====================================================================================================
+// Затемнение блока при наведении
+.nuar_blk {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #00000035;
+	&:hover {
+ 	 background-color: #00000050;
+	}
+}
+//====================================================================================================
+// Наложение труегольного блока
+.nuar_color {
+  position: relative;
+  width: 300px;
+  height: 160px;
+  border-radius: 25px;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 6px rgba(0,0,0,0.5));
+	&:before {
+ 	 content: '';
+ 	 position: absolute;
+  	width: 100%;
+ 	 height: 100%;
+ 	 background-image: radial-gradient(circle at 100% 0%, #fec38e, #ff7700 70%);
+   border-radius: inherit;
+ 	 transform: skewY(-12deg);
+ 	 transform-origin: 100% 50%;
+	}
+}
+//====================================================================================================
+.row:after {
+	display: block;
+	content: "";
+	clear: both;
+} 
+.rub:after {
+	content: "₽";
+}
+//====================================================================================================
+// Параллакс картинка
+.parallax {
+	background: url('../img/smart-conven.jpg') center / cover no-repeat fixed;
+}
+//====================================================================================================
+%noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+//====================================================================================================
+ol.counter {
+	list-style-type: none;
+	counter-reset: item;
+	li {
+		position: relative;
+		padding: 0px 0px 0px 45px;
+		&:before {
+			counter-increment: item;
+			content: counter(item);
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: #818181;
+			font-size: 14px;
+			font-weight: 700;
+			text-align: center;
+			line-height: 26px;
+			border-radius: 50%;
+			width: 28px;
+			height: 28px;
+			border: 1px solid #4274bb;
+		}
+	}
+}
+//====================================================================================================
+.ellipsis {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.es {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+//====================================================================================================
+.table {
+	display: table;
+	font-size: 0;
+	width: 100%;
+	//table-layout: fixed;
+}
+.trow {
+	display: table-row;
+}
+.cell {
+	display: table-cell;
+	&.full {
+		width: 100%;
+	}
+}
+//====================================================================================================
+._ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+body.ie {
+	._ibg {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	._ibg img {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+//====================================================================================================
+._video {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+	video,
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.videobg {
+	video,
+	iframe,
+	object,
+	embed {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform: translateX(-50%) translateY(-50%);
+		background-size: cover;
+	}
+}
+//====================================================================================================
+// ._more-block
+._more-block {
+}
+// ._more-content
+._more-content {
+	transition: all 0.3s ease 0s;
+	overflow: hidden;
+}
+// ._more-item
+._more-item {
+}
+// ._more-link
+._more-link {
+	cursor: pointer;
+	span {
+		font-style: normal;
+		&:first-child {
+			display: block;
+		}
+		&:last-child {
+			display: none;
+		}
+	}
+	&._active {
+		span {
+			font-style: normal;
+			&:first-child {
+				display: none;
+			}
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}
+//====================================================================================================
+%graystyle {
+	transition: all 0.3s ease 0s;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+%graystyleoff {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+}
+//====================================================================================================
+
+// Swiper-Slider
+._swiper {
+	overflow: hidden;
+	//.swiper-wrapper
+	.swiper-wrapper {
+		width: 100%;
+		height: 100%;
+		box-sizing: content-box;
+		display: flex;
+		position: relative;
+	}
+	&.swiper-container-vertical {
+		.swiper-wrapper {
+			flex-direction: column;
+		}
+	}
+	&.swiper-container-autoheight {
+		.swiper-wrapper {
+			align-items: flex-start;
+		}
+	}
+}
+.swiper-container-initialized {
+	.swiper-slide {
+		flex-shrink: 0;
+		// transition-property: transform;
+	}
+}
+.swiper-container-android {
+	.swiper-slide,
+	.swiper-wrapper {
+		transform: translate3d(0px, 0, 0);
+	}
+}
+.swiper-button-lock {
+	display: none !important;
+}
+.swiper-button {
+	position: absolute;
+	top: 28%;
+	z-index: 5000;
+	width: 43px;
+	height: 43px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+		&:before {
+		content: '';
+		float: left;
+		flex: 0 0 8px;
+		height: 12px;
+		background-size: 100%;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+	}
+}
+.swiper-button-next {
+	left: 2%;
+		&:before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDggMTIiPg0KICA8aW1hZ2UgaWQ9ImNoZXZyb24tcmlnaHQiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUFnQUFBQU1DQVlBQUFCZm52eWRBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBRTVKUkVGVUdGZGovUC8vUHdNVzBBRVU0d2ZpTEVZc0NrQ1M1VkJOOXVnS2tDV3pnSXFtSXl2QWtBU1pBbE9BVlJLbUFLY2swUXBBQ3ZGYUFRc0d2STdFcVloUVFGbGlVd0J6RTRpdUFBQm9MVGhndUxFelFRQUFBQUJKUlU1RXJrSmdnZz09Ii8+DQo8L3N2Zz4NCg==');
+	}
+}
+.swiper-button-prev {
+	right: 2%;
+		&:before {
+    	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOCIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDggMTIiPg0KICA8aW1hZ2UgaWQ9ImNoZXZyb24tcmlnaHQiIHdpZHRoPSI4IiBoZWlnaHQ9IjEyIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUFnQUFBQU1DQVlBQUFCZm52eWRBQUFBQkhOQ1NWUUlDQWdJZkFoa2lBQUFBRXRKUkVGVUdGZGovUC8vUHdNUWRBQXhQeEJuQVRGWUFBWVlnUW9zZ0p6alVJRVo2SXBBQ2tCeW1VQThEWnNpbUFLY2lwQVZZRldFcmdCREVja0tNQnhMdENQeGVwT29nTUlaMUFEcjlVRVpZdlZ1b3dBQUFBQkpSVTVFcmtKZ2dnPT0iLz4NCjwvc3ZnPg0K');
+	}
+}
+//====================================================================================================
+
+// Табы
+._tabs {
+}
+._tabs-item {
+	cursor: pointer;
+}
+._tabs-block {
+	display: none;
+	&._active {
+		display: block;
+	}
+}
+//=====================================================================================================================
+.mirror {
+	transform: scale(-1, 1);
+}
+//=====================================================================================================================
+.nicescroll-rails {
+	z-index: 1000 !important;
+}
+//========================================================================================================================================================
+
+// Спойлеры
+.spollers-block__title {
+	cursor: pointer;
+}
+//========================================================================================================================================================
+._custom-scroll {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	z-index: 1000;
+	//background-color: rgba(0, 0, 0, 0.1);
+	&__line {
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 3px 0 0 3px;
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+}
+//========================================================================================================================================================
+
+// Slick-Slider ======================================================================================================================================
+.slick-slider .slick-track {
+	justify-content: space-between;}
+
+ .slick-arrow {
+	position: absolute;
+	top: 45%;
+	width: 43px;
+	height: 43px;
+	font-size: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid #D2D1D1;
+	z-index: 50;}
+
+ .slick-arrow:before {
+	content: '';
+	float: left;
+	width: 7px;
+	height: 15px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;}
+
+ .slick-next {
+	left: -20px;}
+
+ .slick-prev {
+	right: -20px;}
+
+ .slick-next:before {
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4Ljg3NSIgaGVpZ2h0PSIxOS41MjEiIHZpZXdCb3g9IjAgMCA4Ljg3NSAxOS41MjEiPg0KICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfNDAiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgNDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMzguMzQyIC0xMDI5LjgzNCkiPg0KICAgIDxsaW5lIGlkPSLQm9C40L3QuNGPXzEyIiBkYXRhLW5hbWU9ItCb0LjQvdC40Y8gMTIiIHgxPSI2Ljc1NiIgeTE9IjguNjY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzkuNDAyIDEwMzkuNjI4KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAzYzhjIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41MSIvPg0KICAgIDxsaW5lIGlkPSLQm9C40L3QuNGPXzEzIiBkYXRhLW5hbWU9ItCb0LjQvdC40Y8gMTMiIHkxPSI4LjY2NyIgeDI9IjYuNzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzkuNDAyIDEwMzAuODk0KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAzYzhjIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41MSIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
+}
+ .slick-prev:before {
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4Ljg3NSIgaGVpZ2h0PSIxOS41MjEiIHZpZXdCb3g9IjAgMCA4Ljg3NSAxOS41MjEiPg0KICA8ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfMzgiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgMzgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjgwLjI1IC0xMDI5LjgzNCkiPg0KICAgIDxsaW5lIGlkPSLQm9C40L3QuNGPXzEwIiBkYXRhLW5hbWU9ItCb0LjQvdC40Y8gMTAiIHgyPSI2Ljc1NiIgeTI9IjguNjY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjgxLjMwOSAxMDMwLjg5NCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwM2M4YyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNTEiLz4NCiAgICA8bGluZSBpZD0i0JvQuNC90LjRj18xMSIgZGF0YS1uYW1lPSLQm9C40L3QuNGPIDExIiB4MT0iNi43NTYiIHkyPSI4LjY2NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTY4MS4zMDkgMTAzOS42MjgpIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDNjOGMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUxIi8+DQogIDwvZz4NCjwvc3ZnPg0K');
+}
+//====================================================================================================================================================
+
+// Стилизация скролла сайта
+::-webkit-scrollbar {
+  overflow-y: scroll;
+  width: 7px;
+  background-color: #f9f9fd;
+}
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+//</ГОТОВЫЕ КЛАССЫ>====================================================================================================
