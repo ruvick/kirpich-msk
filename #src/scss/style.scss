@@ -272,6 +272,8 @@ h4 {
     overflow: hidden;
 	}
 	&__text {
+		display: flex;
+    flex-direction: column;
 		flex: 1 1 auto;
 		padding: 30px 30px 15px 30px;
 		h4 {
@@ -280,6 +282,7 @@ h4 {
 			line-height: 1.2;
 			font-weight: 400;
 			color: #a59d8a;
+			flex: 1 1 auto;
 			margin-bottom: 20px;
 		}
 	}
