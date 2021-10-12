@@ -162,11 +162,11 @@ h4 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 .wrapper {
@@ -3470,6 +3470,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   float: left;
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .advant-icon-01:before {
@@ -3560,6 +3561,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .prod-card__body {
     margin-bottom: 10px;
   }
+
+  .advant__item {
+    flex: 0 1 24.3%;
+    padding: 25px;
+  }
 }
 @media (max-width: 930px) {
   .prod-card__img-block {
@@ -3586,6 +3592,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .delivery__img {
     opacity: 0.3;
+  }
+
+  .advant__item {
+    flex: 0 1 24%;
+  }
+
+  .advant-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-top: -80px;
+  }
+
+  .advant__item p {
+    font-size: 20px;
+    line-height: 1;
   }
 }
 @media (max-width: 860px) {
@@ -3741,6 +3763,50 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-size: 14px;
     margin-top: 20px;
   }
+
+  .advant__row {
+    margin-top: 60px;
+  }
+
+  .advant__item {
+    flex: 0 0 23.5%;
+    padding: 15px;
+  }
+
+  .advant-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-top: -55px;
+  }
+
+  .advant__item p {
+    font-size: 16px;
+  }
+
+  .advant-icon-01:before {
+    flex: 0 0 34px;
+    height: 43px;
+  }
+
+  .advant-icon-02:before {
+    flex: 0 0 34px;
+    height: 34px;
+  }
+
+  .advant-icon-03:before {
+    flex: 0 0 40px;
+    height: 34px;
+  }
+
+  .advant-icon-04:before {
+    flex: 0 0 48px;
+    height: 30px;
+  }
+
+  .advant__row {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 663px) {
   .prod-card__choice {
@@ -3767,6 +3833,60 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .prod-card__choice {
     padding: 0 20px 20px 20px;
+  }
+
+  .advant__row {
+    overflow-x: auto;
+    width: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .advant__item {
+    flex: 0 0 24%;
+    padding: 10px 10px 15px 10px;
+    margin-right: 10px;
+  }
+
+  .advant__item:last-child {
+    margin-right: 0;
+  }
+
+  .advant-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .advant__item p {
+    font-size: 14px;
+  }
+
+  .advant__row {
+    margin-top: 20px;
+  }
+
+  .advant-icon-01:before {
+    flex: 0 0 24px;
+    height: 33px;
+  }
+
+  .advant-icon-02:before {
+    flex: 0 0 24px;
+    height: 24px;
+  }
+
+  .advant-icon-03:before {
+    flex: 0 0 23px;
+    height: 20px;
+  }
+
+  .advant-icon-04:before {
+    flex: 0 0 28px;
+    height: 18px;
   }
 }
 @media (max-width: 540px) {
@@ -3818,6 +3938,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .prod-card__img-item {
     width: 100%;
   }
+
+  .advant__item {
+    flex: 0 0 28%;
+    padding: 10px 10px 15px 10px;
+  }
 }
 @media (max-width: 480px) {
   .info__img {
@@ -3866,6 +3991,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .delivery__btn {
     width: 100%;
+  }
+
+  .advant__item {
+    flex: 0 0 36%;
   }
 }
 @media (max-width: 375px) {

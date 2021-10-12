@@ -99,9 +99,9 @@ h4 {
 	
 	@media (max-width: 768px) {
 		h1 {
-			font-size: 26px;}
+			font-size: 20px;}
 		h2 {
-			font-size: 24px;}
+			font-size: 20px;}
 	}
 //<ЗАГОЛОВКИ>=================================================================================================================
 
@@ -403,6 +403,7 @@ h4 {
  float: left;
  background-position: 0 0;
  background-repeat: no-repeat;
+ background-size: 100%;
 }
 .advant-icon-01:before {
  flex: 0 0 44px;
