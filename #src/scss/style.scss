@@ -178,11 +178,20 @@ h4 {
 }
 
 .info__img {
+	position: relative;
 	flex: 0 1 390px;
 	max-height: 391px;
-	overflow: hidden;
+	// overflow: hidden;
 	margin-top: 25px;
   margin-right: 10px;
+}
+
+.info__img-shadow {
+  position: absolute;
+  bottom: -38%;
+  left: -8%;
+  width: 548px;
+  height: 246px;
 }
 
 .info__form-block {
@@ -217,6 +226,10 @@ h4 {
 .info__form-btn {
 	min-width: 170px;
 	min-height: 59px;
+	border-radius: 5px;
+	background: linear-gradient(#f56e1c 0%, #ff5400 100%);
+	border: 3px solid #ea5d11;
+
 }
 //===================================================================================================================================
 
@@ -239,6 +252,7 @@ h4 {
 		flex-direction: column;
 		border-radius: 10px;
     background: #fff;
+    overflow: hidden;
     margin-bottom: 30px;
 	}
 	&__img-block {

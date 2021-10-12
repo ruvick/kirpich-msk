@@ -191,7 +191,7 @@ h4 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 6px 8px;
+  padding: 6px 8px 3px 8px;
   min-width: 152px;
   min-height: 44px;
   font-family: "Circe";
@@ -200,9 +200,9 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  background-image: linear-gradient(0deg, #f56e1c 0%, #ff5400 100%);
-  border: 3px solid #ea5d11;
   border-radius: 5px;
+  background: linear-gradient(#f56e1c 0%, #ff5400 100%);
+  border: 3px solid #ea5d11;
 }
 .btn.fw {
   width: 100%;
@@ -404,7 +404,7 @@ textarea.input {
   visibility: hidden;
 }
 .checkbox__input:checked + .checkbox__text:before {
-  background: #fff url("../img/icons/check.png") center no-repeat;
+  background: #fff url("../img/icons/check.svg") 50% 45% no-repeat;
 }
 .checkbox__text {
   display: inline-flex;
@@ -3242,11 +3242,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .info__img {
+  position: relative;
   flex: 0 1 390px;
   max-height: 391px;
-  overflow: hidden;
   margin-top: 25px;
   margin-right: 10px;
+}
+
+.info__img-shadow {
+  position: absolute;
+  bottom: -38%;
+  left: -8%;
+  width: 548px;
+  height: 246px;
 }
 
 .info__form-block {
@@ -3281,6 +3289,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .info__form-btn {
   min-width: 170px;
   min-height: 59px;
+  border-radius: 5px;
+  background: linear-gradient(#f56e1c 0%, #ff5400 100%);
+  border: 3px solid #ea5d11;
 }
 
 .product {
@@ -3302,6 +3313,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   flex-direction: column;
   border-radius: 10px;
   background: #fff;
+  overflow: hidden;
   margin-bottom: 30px;
 }
 .prod-card__img-block {
