@@ -1,4 +1,9 @@
 //<Адаптив>===========================================================================================================================================
+@media (max-width: 1330px) {
+	.delivery__img {
+    right: 0;}
+}
+
 @media (max-width: 1280px) {
 	._container {
 		padding: 0 10px;}
@@ -13,6 +18,15 @@
   	margin-left: 10px;}
   .prod-card__body {
     margin-bottom: 20px;}
+  .delivery__descp p {
+    color: #000;}
+  .delivery__img {
+    opacity: 0.7;}
+}
+
+@media (max-width: 1050px) {
+	.delivery__img {
+    top: -30%;}
 }
 
 @media (max-width: 1024px) {
@@ -43,6 +57,8 @@
   .prod-card__choice .btn {
     min-width: 0;
     width: 100%;}
+  .delivery__img {
+    opacity: 0.3;}
 }
 
 @media (max-width: 860px) {
@@ -124,6 +140,17 @@
   .prod-card__choice .btn {
     font-size: 12px;
     min-height: 30px;}
+  .delivery__img {
+    display: none;}
+  .delivery__descp {
+    flex: 0 1 100%;}
+  .delivery__descp p {
+    font-size: 16px;}
+  .delivery__btn {
+    min-width: 180px;
+    min-height: 45px;
+    font-size: 14px;
+    margin-top: 20px;}
 }
 
 @media (max-width: 663px) {
@@ -206,6 +233,8 @@
     padding: 15px 20px 10px 20px;}
   .prod-card__choice {
     padding: 0 20px 20px 20px;}
+  .delivery__btn {
+    width: 100%;}
 }
 
 @media (max-width: 375px) {
