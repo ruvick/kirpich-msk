@@ -2940,6 +2940,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .popup__policy {
   margin-bottom: 25px;
 }
+.popup__policy a {
+  color: #a59d8a;
+}
 
 .popup__form-btn {
   font-size: 18px;
@@ -3995,6 +3998,29 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .advant__item {
     flex: 0 0 36%;
+  }
+
+  .popup__form-block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .popup__notific {
+    margin-bottom: 15px;
+  }
+
+  .popup__form-input {
+    font-size: 14px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .popup__policy {
+    margin-bottom: 20px;
+  }
+
+  .popup__form-btn {
+    width: 100%;
   }
 }
 @media (max-width: 375px) {
