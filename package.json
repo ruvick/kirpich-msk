@@ -5,6 +5,11 @@
 	"author": "ruvick",
 	"private": true,
 	"license": "GNU General Public License (GPL)",
+	"scripts": {
+		"send_to_host": "cd kirpich-msk && scp -C -r * m79067yq_ruvick@m79067yq.beget.tech:stroymaterialy-msk.rf/public_html",
+		"send_sender": "cd #src && scp sender.php m79067yq_ruvick@m79067yq.beget.tech:stroymaterialy-msk.rf/public_html",
+		"deploy": "gulp build && npm run send_to_host"
+	},
 	"devDependencies": {
 		"browser-sync": "latest",
 		"del": "latest",

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Страница благодарности"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+
+			<section id="info" class="info _bgi">
+				<div class="_container">
+					<div class="info__row-thank info__row d-flex">
+						<div class="info__img">
+							<img src="img/brick.png" alt="">
+							<div class="info__img-shadow">
+								<img src="img/brick-shadow.png" alt="">
+							</div>
+						</div>
+						<div class="info__form-block">
+							<h3>Благодарим вас за обращение!</h3>
+							<p>Наши менеджеры свяжутся с вами в ближайшее время</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="delivery" class="delivery _bgi">
+				<div class="_container">
+					<div class="delivery__row d-flex">
+						<div class="delivery__descp">
+							<h2 class="title">Доставка кирпича по Москве и Московской области</h2>
+							<p>
+								Мы доставим приобретенный кирпич и стройматериалы в любую точку Москвы и Московской области.
+								Наши водители имеют все необходимые пропуска. Мы гарантируем сохранность груза во время погрузки
+								доставки и выгрузки.
+							</p>
+							<a href="#callback" class="delivery__btn _popup-link btn">Заказать доставку</a>
+						</div>
+						<div class="delivery__img">
+							<img src="img/delivery.png" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="advantage" class="advantage">
+				<div class="_container">
+					<h2 class="title">Почему выбирают нас</h2>
+					<div class="advant__row d-flex">
+
+						<div class="advant__item">
+							<span class="advant-icon advant-icon-01"></span>
+							<p>Самая <br> выгодная цена</p>
+						</div>
+
+						<div class="advant__item">
+							<span class="advant-icon advant-icon-02"></span>
+							<p>Только качественные <br> стройматериалы</p>
+						</div>
+
+						<div class="advant__item">
+							<span class="advant-icon advant-icon-03"></span>
+							<p>Консультация <br> при выборе</p>
+						</div>
+
+						<div class="advant__item">
+							<span class="advant-icon advant-icon-04"></span>
+							<p>Собственная служба <br> доставки</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
