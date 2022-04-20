@@ -21,12 +21,12 @@
 						<div class="info__form-block">
 							<h3>Узнайте цену кирпича с доставкой</h3>
 							<p>Заполните заявку и наш менеджер свяжется с Вами через 15 минут</p>
-							<form action="#" class="info__form">
+							<form action="#" class="info__form" id="form_in_foot">
 								<div class="form__line">
-									<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-										data-value="Имя*" class="input _req">
-									<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поля"
-										data-value="Телефон*" class="input _phone _req">
+									<input autocomplete="off" type="text" name="name" data-error="Заполните поле" data-value="Имя*"
+										class="input _req">
+									<input autocomplete="off" type="text" name="phone" data-error="Заполните поле" data-value="Телефон*"
+										class="input _phone _req">
 								</div>
 								<label for="check" class="info__checkbox checkbox">
 									<input id="check" data-error="Ошибка" class="checkbox__input" type="checkbox" checked value="1"
@@ -36,7 +36,8 @@
 									</span>
 								</label>
 
-								<button type="submit" class="info__form-btn btn">Отправить</button>
+								<button type="submit" class="info__form-btn _send_btn form__btn btn"
+									data-formid="form_in_foot">Отправить</button>
 							</form>
 						</div>
 					</div>
