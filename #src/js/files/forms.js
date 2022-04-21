@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 				if (xhr.status == 200) {
 
-					location.href = "/thanks.html"
+					location.href = "/thank.html"
 
 				} else {
 					console.log(xhr.status)

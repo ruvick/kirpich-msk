@@ -7,7 +7,7 @@ header("Access-Control-Allow-Origin: *");
 
 if (
     ($_SERVER["HTTP_ORIGIN"] !== "http://localhost:3000")&&
-    ($_SERVER["HTTP_ORIGIN"] !== "http://стройматериалы-мск.рф")  
+    ($_SERVER["HTTP_ORIGIN"] !== "http://xn----7sbatpdmgegnxfhmdf1o.xn--p1ai")  
     
     ) {
         http_response_code(403);
@@ -24,7 +24,7 @@ if (
                     </head>
                     <body>
                         <p>ФИО: '.$_REQUEST['name'].'</p>
-                        <p>Телефон: '.$_REQUEST['tel'].'</p>                   
+                        <p>Телефон: '.$_REQUEST['tel'].'</p>                    
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
