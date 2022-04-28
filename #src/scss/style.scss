@@ -194,7 +194,7 @@ h4 {
 .info__row {
 	// padding-left: 170px;
 	justify-content: space-between;
-	max-width: 1200px;
+	max-width: 1250px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -265,11 +265,18 @@ h4 {
 }
 
 .info__block {
-	flex: 0 1 700px;
+	flex: 0 1 800px;
 	background: transparent;
 }
 
 .info__title {
+	font-size: 36px;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.info__subtitle {
+	font-size: 32px !important;
 	color: #fff;
 	margin-bottom: 25px;
 }
@@ -327,7 +334,8 @@ h4 {
 			line-height: 1.2;
 			font-weight: 400;
 			color: #a59d8a;
-			margin-bottom: 10px;
+			flex: 1 1 auto;
+			margin-bottom: 20px;
 		}
 	}
 
