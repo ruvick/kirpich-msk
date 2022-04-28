@@ -3862,6 +3862,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .advant__row {
     margin-top: 50px;
   }
+
+  .info__img {
+    display: none;
+  }
 }
 @media (max-width: 663px) {
   .prod-card__choice {
@@ -4143,6 +4147,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .mob-callback__phone {
     margin-right: 10px;
+  }
+
+  .info__title {
+    font-size: 26px;
+  }
+
+  .info__subtitle {
+    font-size: 22px !important;
   }
 }
 @media (max-width: 375px) {

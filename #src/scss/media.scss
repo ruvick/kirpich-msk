@@ -333,6 +333,10 @@
   .advant__row {
     margin-top: 50px;
   }
+
+  .info__img {
+    display: none;
+  }
 }
 
 @media (max-width: 663px) {
@@ -622,6 +626,14 @@
 
   .mob-callback__phone {
     margin-right: 10px;
+  }
+
+  .info__title {
+    font-size: 26px;
+  }
+
+  .info__subtitle {
+    font-size: 22px !important;
   }
 }
 
