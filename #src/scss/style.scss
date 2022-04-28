@@ -194,7 +194,7 @@ h4 {
 .info__row {
 	// padding-left: 170px;
 	justify-content: space-between;
-	max-width: 1152px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -264,6 +264,16 @@ h4 {
 
 }
 
+.info__block {
+	flex: 0 1 700px;
+	background: transparent;
+}
+
+.info__title {
+	color: #fff;
+	margin-bottom: 25px;
+}
+
 //===================================================================================================================================
 
 .product {
@@ -317,14 +327,13 @@ h4 {
 			line-height: 1.2;
 			font-weight: 400;
 			color: #a59d8a;
-			flex: 1 1 auto;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 	}
 
 	&__price {
 		font-family: 'Europe Ext';
-		font-size: 30px;
+		font-size: 27px;
 		line-height: 1.2;
 		font-weight: 700;
 		color: #000000;
@@ -359,6 +368,15 @@ h4 {
 .prod-card__input-block .input._focus {
 	outline: none;
 	background: none;
+}
+
+.prod-card__btn {
+	width: 100%;
+}
+
+.prod-card__range {
+	flex: 1 1 auto;
+	margin-bottom: 20px;
 }
 
 // =============================================================================================================================================================
