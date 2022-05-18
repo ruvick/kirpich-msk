@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				console.log("eroroa" + xhr.statusText)
 			}
 
-			xhr.open('POST', "http://xn----7sbatpdmgegnxfhmdf1o.xn--p1ai/sender.php", true);
+			xhr.open('POST', "https://xn----7sbatpdmgegnxfhmdf1o.xn--p1ai/sender.php", true);
 			xhr.send(params);
 		}
 	})

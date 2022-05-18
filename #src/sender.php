@@ -6,8 +6,8 @@ header("Access-Control-Allow-Origin: *");
 // print_r(json_encode($_SERVER));
 
 if (
-    ($_SERVER["HTTP_ORIGIN"] !== "http://localhost:3000")&&
-    ($_SERVER["HTTP_ORIGIN"] !== "http://xn----7sbatpdmgegnxfhmdf1o.xn--p1ai")  
+    ($_SERVER["HTTP_ORIGIN"] !== "https://localhost:3000")&&
+    ($_SERVER["HTTP_ORIGIN"] !== "https://xn----7sbatpdmgegnxfhmdf1o.xn--p1ai")  
     
     ) {
         http_response_code(403);
