@@ -287,7 +287,7 @@ function htmlBuild() {
 						'key': '_v',
 						'value': '%DT%',
 						'cover': 1,
-						'files': ['app.min.js', 'vendors.min.js'] // Array [{String|Regex}] of explicit files to append to
+						'files': ['app.js', 'vendors.min.js'] // Array [{String|Regex}] of explicit files to append to
 					}
 				]
 			},
