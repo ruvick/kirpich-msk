@@ -217,7 +217,7 @@ function cssBuild() {
 		.pipe(browsersync.stream());
 }
 function jsBuild() {
-	let appPath = path.build.js + 'app.min.js';
+	let appPath = path.build.js + 'app.js';
 	let vendorsPath = path.build.js + 'vendors.min.js';
 	del(appPath);
 	del(vendorsPath);
