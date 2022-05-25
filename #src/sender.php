@@ -15,7 +15,7 @@ if (
     }
 
 
-    $to = 'rudikov-web@yandex.ru'; 
+    $to = 'rudikov-web@ya.ru,asmi046@gmail.com,79067076385@yandex.ru';  
     $subject = 'Обращение с сайта стройматериалы-мск.рф';
     $message = '
                 <html>
